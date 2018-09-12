@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-control" content="public">
+    <meta http-equiv="Cache-control" content="max-age=3600">
+    <meta name="author" content="Alan Chen">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/css/grayscale.css">
+  
+    <title>陳勁文 - Alan Chen</title>
+    
+    <link rel="shortcut icon" href="./photo/favicon.ico" type="image/vnd.microsoft.icon" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+          <a class="navbar-brand" href="#section1">Alan's Website</a>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#section2">學歷</a></li>
+              <li><a href="#section3">經歷</a></li>
+              <li><a href="#section4">語言</a></li>
+              <li><a href="#section5">興趣</a></li>
+              <li><a href="#section6">寵物</a></li>
+              <li><a href="#section7">社群網站</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="javascript:void(0);" data-toggle="modal" data-target="#selectLang">Select Language</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="modal fade" id="selectLang" tabindex="-1" role="dialog" aria-labelledby="selectLang" aria-hidden="true" align="center">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title">Select Language</p>
+                </div>
+                <div class="modal-body">
+                    <img src="photo/construction_us.gif" alt="Under Constuction">
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-default" data-dismiss="modal">Exit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section1" class="container" style="width: 80%;margin-top: 70px">
+        <div id="carousel" class="carousel slide" data-ride="carousel" style="margin:0px auto;border-radius:20px">
+            <!-- Indicators -->
+            <ol id="test" class="carousel-indicators" style="bottom:-10px;">
+                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+                <li data-target="#carousel" data-slide-to="3"></li>
+                <li data-target="#carousel" data-slide-to="4"></li>
+                <li data-target="#carousel" data-slide-to="5"></li>
+                <li data-target="#carousel" data-slide-to="6"></li>
+                <li data-target="#carousel" data-slide-to="7"></li>
+                <li data-target="#carousel" data-slide-to="8"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox" style="margin-bottom:50px;">
+                <div class="item active">
+                    <img src="photo/front_TWSecurity.jpg" alt="2018_TWSecurity" style="border-radius:20px">
+                    <div class="carousel-caption" style="bottom: -25px">
+                        <p style="font-size:2vw; color: white">Taiwan Cyber Security Summit,<br>Mar. 2018</p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img src="photo/front_hinetnoc.jpg" alt="CHT_HiNet_NOC" style="border-radius:20px">
+                    <div class="carousel-caption" style="bottom: -25px">
+                        <p style="font-size:2vw; color: white">
+                            Network Operation Center,
+                            <br>Chung Hwa Telecom</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="photo/front_TaiwanIsrael.jpg" alt="2015_Taiwan-Israel" style="border-radius:20px">
+                    <div class="carousel-caption" style="bottom: -25px">
+                        <p style="font-size:2vw; color: white">2015 Taiwan-Israel Youths Exchange Delegation</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="photo/front_TUSA2015.jpg" alt="TUSA2015" style="border-radius:20px">
+                    <div class="carousel-caption" style="bottom: -25px">
+                        <p style="font-size:2vw; color: white">Robert C. DeWitt<br>
+                            Chief of AIT’s Kaohsiung Branch Office
+                            <br>TUSA 2015, NCKU</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="photo/front_fencing.jpg" alt="fencing" style="border-radius:20px">
+                    <div class="carousel-caption" style="bottom: -25px">
+                        <p style="font-size:2vw; color: white">NCKU Fencing - Foil</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="photo/front_krEmperor.jpg" alt="krEmperor" style="border-radius:20px">
+                    <div class="carousel-caption" style="bottom: -25px">
+                        <p style="font-size:2vw; color: white">The Emperor, Seoul, Korea, 2015</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="photo/front_horse.jpg" alt="horse" style="border-radius:20px">
+                    <div class="carousel-caption" style="bottom: -25px">
+                        <p style="font-size:2vw; color: white">Equestrianism</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="photo/front_family.jpg" alt="family" style="border-radius:20px">
+                    <div class="carousel-caption" style="bottom: -25px">
+                        <p style="font-size:2vw; color: white">Family</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="photo/front_kid.jpg" alt="kid" style="border-radius:20px">
+                    <div class="carousel-caption" style="bottom: -25px">
+                        <p style="font-size:2vw; color: white"></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev" style="opacity: .5;color: #fff;border-radius:20px">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel" role="button" data-slide="next" style="opacity: .5;color: #fff;border-radius:20px">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <hr><br>
+        <table align="center">
+            <tr><td style="width: 60%"><p>陳勁文</p></td>
+                <td rowspan="7" align="right">
+                    <img src="photo/Alan.jpg" alt="Alan" width="80%" style="border-radius:20px">
+                </td></tr>
+            <tr><td><p>人稱，Alan</p></td></tr>
+            <tr><td><p>土生土長台南人</p></td></tr>
+            <tr><td><p>對生物學、網際網路、資安極有興趣</p></td></tr>
+            <tr><td><p>目前任職於中華電信 CDN Team</p></td></tr>
+            <tr><td><a target="_blank" href="https://www.cdn.hinet.net/index.html"><img src="photo/chtcdn.jpg"></a></td></tr>
+            <tr><td><p></p></td></tr>
+        </table>
+        
+        <br>
+
+        <div id="section2" class="container-fluid">
+            <hr>
+            <h2><font color="#333">學歷</font></h2>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <div class="panel-heading" role="tab" id="headingOne" style="background: #f5f5f5">
+                            <h4 class="panel-title" style="color: #000">
+                                國立成功大學 電腦與通信工程研究所 肄業
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body">
+                            <a target="_blank" href="http://hpdslab.ee.ncku.edu.tw/index.html">
+                                <img src="photo/hpds_header.png" alt="NCKU HPDS"><br>
+                                高效能平行分散系統實驗室<br>
+                            </a>
+                            指導教授：<a target="_blank" href="http://hpdslab.ee.ncku.edu.tw/members.html">謝錫堃<br></a>
+                            相關領域與課程：巨量資料, 分散式系統, 電腦網路, 資訊安全<br>
+                            <br>就讀一學期，於2016年1月休學<br><br>
+                            <a href="./line_analyzer/index.html">Small Project - Line Chat Analyzer</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div class="panel-heading" role="tab" id="headingTwo" style="background: #f5f5f5">
+                            <h4 class="panel-title" style="color: #000">
+                                國立成功大學 工程科學系
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body">
+                            指導教授：<a target="_blank" href="http://www.es.ncku.edu.tw/esncku/zh/page.teacher.query.action?id=11#tabs-1">莊哲男</a><br>
+                            相關領域與課程：網路安全, 計算機組織與組合語言, 微處理器介面設計, 程式設計, 資料庫概論等<br><br>
+                            實習：<br>
+                            <a target="_blank" href="https://www.youtube.com/watch?v=6cYwBwKXaRw">
+                                國家實驗研究院 高速網路與計算中心 暑期實習生<br>
+                                協助建立中文詞彙語意關聯資料庫<br>
+                                <img src="photo/nchc.jpg" alt="NCHC_Intern" width="80%" style="border-radius:20px"></a>
+                            <br><br>
+                            專題：<br>
+                            1. 工程科學系專題--垂直機身四旋翼可行性研究<br>
+                            2. 熱傳學專題--致冷晶片恆溫控制<br>
+                            3. 微處理機與介面設計 個人課外實作--西洋劍電子審判計分板<br><br>
+                            課程成果：<br>
+                            1. <a target="_blank" href="https://www.youtube.com/playlist?list=PLCdW92_-qYmAoDQzIbxcgObH48YPhTdL5">微處理機與介面設計<br></a>
+                            2. <a target="_blank" href="https://www.youtube.com/playlist?list=PLCdW92_-qYmCzkGIxWYJmwDuyS2YM5ygS">工程圖學--ANSYS<br></a>
+                            <br>於2015年6月畢業<br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <div class="panel-heading" role="tab" id="headingThree" style="background: #f5f5f5">
+                            <h4 class="panel-title" style="color: #000">
+                                國立臺南第一高級中學
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div class="panel-body">
+                            <a target="_blank" href="https://www.tnfsh.tn.edu.tw/">
+                                <img src="photo/tnfsh.JPG" alt="TNFSH_seniorhigh" width="80%" style="border-radius:20px"><br>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                
+        <div id="section3" class="container-fluid">
+            <hr>
+            <h2><font color="#333">經歷</font></h2>
+            <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                        <div class="panel-heading" role="tab" id="headingOne2" style="background: #f5f5f5">
+                            <h4 class="panel-title" style="color: #000">
+                                工作經歷
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseOne2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne2">
+                        <div class="panel-body">
+                            <table class="table table-hover">
+                                <tr><th>時間</th><th>單位</th></tr>
+                                <tr><td width="20%">2017.11 起</td><td>中華電信 數據通信分公司<br>網際網路處 專員(CDN專案工程師)<br>
+                                    <a target="_blank" href="https://www.cdn.hinet.net/index.html"><img src="photo/chtcdn.jpg"></a>
+                                    </td></tr>
+                                <tr><td width="20%">2016.11 ~ 2017.01</td><td>國泰人壽 投資資訊部 投資程式設計科</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                        <div class="panel-heading" role="tab" id="headingTwo2" style="background: #f5f5f5">
+                            <h4 class="panel-title" style="color: #000">
+                                活動、社團經歷
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo2">
+                        <div class="panel-body">
+                            <table class="table table-hover">
+                                <tr><th>時間</th><th>項目</th></tr>
+                                <tr><td>2014.05</td><td>2014 全國大專校院運動會 擊劍項目 男子鈍劍團體銅牌<br>
+                                    <img src="photo/fencing.jpg" alt="Fencing_Bronze" width="70%" style="border-radius:20px"></td></tr>
+                                <tr><td>2013.07 ~ 2014.06</td><td>
+                                    <a target="_blank" href="https://www.facebook.com/成大擊劍NCKU_Fencing-1115380841895723/">國立成功大學 西洋劍社社長</a></td></tr>
+                                <tr><td>2011.08 ~ 2017.08</td><td>EMT-1緊急救護技術員</td></tr>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="section4" class="container-fluid">
+            <hr>
+            <h2><font color="#333">語言</font></h2>
+            <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseOne3" aria-expanded="true" aria-controls="collapseOne3">
+                        <div class="panel-heading" role="tab" id="headingOne3" style="background: #f5f5f5">
+                            <h4 class="panel-title" style="color: #000">
+                                語言能力
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseOne3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne3">
+                        <div class="panel-body">
+                            <table class="table table-hover">
+                                <tr><th>語言</th><th>程度</th></tr>
+                                <tr><td width="20%">中文</td><td>母語</td></tr>
+                                <tr><td width="20%">英文</td><td>聽、說、讀、寫流利，TOEIC 885分(2010高三)</td></tr>
+                                <tr><td width="20%">法文</td><td>修過三個學期課程</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                        <div class="panel-heading" role="tab" id="headingThree3" style="background: #f5f5f5">
+                            <h4 class="panel-title" style="color: #000">
+                                國際交流經歷
+                            </h4>
+                        </div>
+                    </a>
+                    <div id="collapseThree3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree3">
+                        <div class="panel-body">
+                            <table class="table table-hover">
+                                <tr><th>時間</th><th>項目</th></tr>
+                                <tr><td>2016.07 ~ 2016.08</td>
+                                    <td><a target="_blank" href="https://www.youtube.com/playlist?list=PLkyp4W-DES08wg8xz-Aa_hQ9Qkl9Pb0HE">
+                                        2016 臺美姐妹關係聯盟 暑期華語研習團 學生文化大使</a>
+                                    </td></tr>
+                                <tr><td>2015.10</td><td>2015 全球化青年公共參與及國際關懷研習營</td></tr>
+                                <tr><td>2015.09</td><td>
+                                    <a target="_blank" href="https://iyouth.youthhub.tw/iblog/main.php?id=44072&did=3972">
+                                        2015 教育部青年發展署 臺以青年交流團</a><br>
+                                        遇到一群好朋友
+                                    </td></tr>
+                                <tr><td>2015.07 ~ 2015.08</td><td>
+                                    <a target="_blank" href="https://www.youtube.com/playlist?list=PLkyp4W-DES0-DgITzUwP-Cj2S1BCntfsN">
+                                        2015 臺美姐妹關係聯盟 暑期華語研習團 學生文化大使、團長</a>
+                                    </td></tr>
+                                <tr><td>2015.07 ~ 2015.09</td><td>國立成功大學 文學院華語中心 暑期工讀生</td></tr>
+                                <tr><td>2015.06 ~ 2016.05</td><td><a href="https://www.facebook.com/NCKUISV/">
+                                    國立成功大學 文學院華語中心 華語生服務團 創團團長</a>
+                                    </td></tr>
+                                <tr><td>2015.04</td><td>獨自前往韓國首爾市、慶熙大學回訪</td></tr>
+                                <tr><td>2014.12 ~ 2015.01</td><td>
+                                    <a target="_blank" href="https://www.youtube.com/playlist?list=PLkyp4W-DES08UNWBtfROqjLGOsNnQZYtU">
+                                        2015 韓國慶熙大學 冬季華語研習團 語言交換副隊長、影片組長</a>
+                                    </td></tr>
+                                <tr><td>2014.07 ~ 2014.08</td><td>
+                                    <a target="_blank" href="https://www.youtube.com/playlist?list=PLkyp4W-DES08k581E5GffCpzc1pnXvLGI">
+                                        2014 臺美姐妹關係聯盟 暑期華語研習團 學生文化大使、影片組長</a>
+                                    </td></tr>
+                                    <tr><td>2013.12 ~ 2014.01</td><td>
+                                        <a target="_blank" href="https://www.youtube.com/playlist?list=PLCdW92_-qYmAXhoDyE2yInjQvg4eM7tY6">
+                                            2014 韓國慶熙大學 冬季華語研習團 語言交換、影片組長</a>
+                                        </td></tr>
+                                <tr><td>2013.07 ~ 2013.08</td><td>
+                                    <a target="_blank" href="https://www.youtube.com/playlist?list=PLkyp4W-DES09xhAog2mEVEo38b-TIm9aj">
+                                        2013 臺美姐妹關係聯盟 暑期華語研習團 學生文化大使、結業晚宴主持</a>
+                                    </td></tr>
+                                <tr><td>2012.08 ~ 2016.01</td><td>國立成功大學 國際學生接待義工 小組長</td></tr>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="section5" class="container-fluid">
+            <hr>
+            <h2><font color="#333">興趣</font></h2>
+            <table class="table table-hover">
+                <tr><td>長笛</td><td>高中管樂團</td></tr>
+                <tr><td>影集</td><td>NCIS, TBBT, Sherlock, Game of Thrones, White Collar, et cetera.</td></tr>
+                <tr><td>電影</td><td>除了鬼片幾乎甚都看</td></tr>
+                <tr><td>音樂</td><td>古典、輕音樂、英文流行歌、法式香頌、民歌<br>
+                    You can tell a lot about a person by their playlist.</td></tr>
+                <tr><td>手工藝</td><td>串珠、熱縮片、釘板圍巾、刻印章等，送禮用XD</td></tr>
+                <tr><td>國標舞</td><td>練過一點點Waltz</td></tr>
+                <tr><td>閱讀</td><td>武俠、推理、翻譯小說......最愛金庸</td></tr>
+                <tr><td>語言學習</td><td>法文、韓文一點皮毛</td></tr>
+                <tr><td>影音剪輯</td><td>iMovie，活動影片剪輯</td></tr>
+            </table>
+        </div>
+        
+        <div id="section6" class="container-fluid">
+            <hr>
+            <h2><font color="#333">寵物</font></h2>
+            <h4>小花 天竺鼠 2013.11.21 ~ 2015.10.26</h4>
+            <div align="middle">
+                <iframe width="65%" height="350px" src="https://www.youtube.com/embed/Wo_bfAQWtfI" frameborder="0" allowfullscreen style="border-radius:20px"></iframe>
+            </div>
+        </div>
+        
+        <div id="section7" class="container-fluid">
+            <hr>
+            <h2><font color="#333">社群網路</font></h2>
+            <table class="table table-hover">
+                <tr><td>Facebook</td><td>
+                    <a href="https://www.facebook.com/100021981410676" title="Alan Chen" target="_TOP">
+                        <img class="img" src="https://badge.facebook.com/badge/100021981410676.png" style="border: 0px;" alt=""></a>
+                    </td></tr>
+
+                <tr><td>Instagram</td><td>
+                    <a target="_blank" href="https://instagram.com/alanchen0208">
+                        <img src="https://badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" />
+                    </a>
+                    </td></tr>
+
+                <tr><td>LinkedIn</td><td>
+                    <a target="_blank" href="https://www.linkedin.com/in/alanchen0208/">alanchen0208</a>
+                    </td></tr>
+                
+                <tr><td>YouTube</td><td>
+                    <div class="g-ytsubscribe" data-channel="Alan11826" data-layout="full" data-count="hidden"></div>
+                    <a target="_blank" href="https://www.youtube.com/user/Alan11826">alan11826</a>
+                    </td></tr>
+            </table>
+        </div>
+        <hr>
+
+    </div>
+
+    <footer>
+        <hr class="featurette-divider">
+        <p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Alan Chen<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Contact Me : <img src="photo/mail.jpg" width="200" alt="E-mail"></p>
+        
+        <script src="https://apis.google.com/js/platform.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-92786015-4', 'auto');
+            ga('send', 'pageview');
+        </script>
+        
+        <!-- Start of StatCounter Code for Blogger / Blogspot -->
+        <script type="text/javascript">
+            //<![CDATA[
+            var sc_project=10657777; 
+            var sc_invisible=1; 
+            var sc_security="a60d1bf2"; 
+            var scJsHost = (("https:" == document.location.protocol) ? "https://secure." : "http://www.");
+            document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter_xhtml.js'></"+"script>");
+            //]]>
+        </script>
+        <noscript>
+            <div class="statcounter">
+                <a title="counter for blogspot" href="http://statcounter.com/blogger/" class="statcounter">
+                    <img class="statcounter" src="http://c.statcounter.com/10657777/0/a60d1bf2/1/" alt="counter for blogspot" />
+                </a>
+            </div>
+        </noscript>
+        <!-- End of StatCounter Code for Blogger / Blogspot -->
+    </footer>   
+
+    <!-- script references -->
+    <script src="src/jquery-2.1.4.min.js"></script><script src="src/js/scripts.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

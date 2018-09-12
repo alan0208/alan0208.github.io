@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+
+    <title>Line Chat Analyzer</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="./css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+</head>
+    
+<body>
+    <div id="container" style="width:100%; height:100%">
+        <div style="width:100%; height:100vh; background-color:#ddd" align="center">
+            <div style="height:20vh"></div>
+            <div>
+                <img src="./LINE_logo.svg.png" width="10%"><br><br>
+                <h2>Line Chat Analyzer</h2><br>
+                <form class="form-inline">
+                    <div class="">
+                        <input class="form-control" type="text" id="filelink" size="60" readonly>
+                        <input type="button" onclick="this.form.file.click()" value="Select File" class="btn btn-primary"><br/>
+                        <input type="file" id="file" onchange="setLink(this)" name="file" style="display:none">
+                    </div>
+                </form>
+                <br>
+                <a href="./help.html">Click Here for Help</a>
+                <br>
+                <br>
+            </div>
+        </div>
+        <hr>
+        <div style="width:100%; height:95vh" align="center" id="result">
+            <div>
+                <form id="setting" class="form-inline">
+                    Start Date : 
+                    <div class="input-group date form_date col-md-2" data-date="">
+                        <input class="form-control" data-date-format="yyyy-mm-dd" type="text" id="startDate" disabled>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                    <div class="input-group" style="width:10%"></div>
+                    End Date :
+                    <div class="input-group date form_date col-md-2" data-date="">
+                        <input class="form-control" data-date-format="yyyy-mm-dd" type="text" id="endDate" disabled>
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                    <br/><br/>
+                    <div class="input-group col-md-5">
+                        <label><input type="radio" name="mode" value="1" style="margin-right:10px;" checked>All</label>
+                        <div class="input-group" style="width:10%"></div>
+                        <label><input type="radio" name="mode" value="2" style="margin-right:10px;">Stickers</label>
+                        <div class="input-group" style="width:10%"></div>
+                        <label><input type="radio" name="mode" value="3" style="margin-right:10px;">Photos</label>
+                        <div class="input-group" style="width:10%"></div>
+                        <label><input type="radio" name="mode" value="9" style="margin-right:10px;">Messages and Others</label>
+                    </div>
+                </form>
+            </div>
+            <div id="chartContainer"  style="width:90%; height:85vh" align="center"></div>
+        </div>
+    </div>
+
+    <script src="js/line_analyzer.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="./js/bootstrap-datetimepicker.js"></script>
+    <script src="./js/bootstrap-datetimepicker.zh-TW.js"></script>
+
+    <script src="./js/jquery.blockUI.js"></script>
+    
+    <script type="text/javascript">
+        $('.form_date').change(function () {
+            if (selected == 1) {
+                analysis($('#startDate').val(), $('#endDate').val(), lines);
+            }
+        });
+        
+        $('input[type="radio"]').on('click', function () {
+            if (selected == 1) {
+                analysis($('#startDate').val(), $('#endDate').val(), lines);
+            }
+        });
+        
+        $('.form_date').datetimepicker({
+            language:  'zh-TW',
+            format: 'yyyy-mm-dd',
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2
+        });
+    </script>
+
+    <script src="./js/canvasjs.min.js"></script>
+</body>
+
+</html>

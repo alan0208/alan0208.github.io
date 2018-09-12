@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+
+    <title>Line Chat Analyzer</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+    
+<body>
+    <div id="container" style="width:100%; height:100%">
+        <div style="width:100%; height:100vh; background-color:#ddd" align="center">
+            <div style="height:20vh"></div>
+            <div>
+                <img src="./LINE_logo.svg.png" width="10%"><br><br>
+                <h2>Line Chat Analyzer</h2><br>
+                <input type="button" onclick="go()" value="Go" class="btn btn-primary"><br/>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div id="p1" style="width:100%; height:100vh; background-color:#ddd" align="center">
+        
+            <img src="guide/android/android_01.jpg" width="25%">
+            <img src="guide/android/android_02.jpg" width="25%">
+            <br>
+            <h2>點選『右上角小箭頭』後，選擇『對話設定』</h2>
+            <h2>PS.目前僅限單人對話檔，群組不適用</h2>
+        </div>
+        
+        <div id="p2" style="width:100%; height:100vh; background-color:#ddd" align="center">
+            <img src="guide/android/android_03.jpg" width="25%">
+            <img src="guide/android/android_04.jpg" width="25%">
+            <br>
+            <h2>選擇『備份/傳送對話紀錄』、『備份文字訊息』</h2>
+        </div>
+        
+        <div id="p3" style="width:100%; height:100vh; background-color:#ddd" align="center">
+            <img src="guide/android/android_05.jpg" width="25%">
+            <br>
+            <h2>儲存在自己找得到的地方，再使用本網頁開啟該txt檔</h2>
+            <h3>eg. 寄送email給自己</h3>
+        </div>
+        
+        <div id="p4" style="width:100%; height:100vh; background-color:#ddd" align="center">
+            
+            <div style="height:30vh"></div>
+            <h1>Enjoy!</h1>
+            <br>
+            <a href="./index.html"><input type="button" value="Go Back" class="btn btn-primary"></a>
+        
+        </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    
+    <script type="application/javascript">
+        
+        function go(){
+            $('html, body').animate({
+                scrollTop: $( '#p1' ).offset().top
+            }, 1000);
+        }
+    </script>
+    
+    
+</body>
+
+</html>

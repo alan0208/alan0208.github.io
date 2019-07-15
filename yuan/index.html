@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Cache-Control" content="No-Cache">
+
+    <title>Test if You Have a Big Butt</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="./css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+
+</head>
+    
+<body>
+    <div id="container" style="width:100%; height:100%">
+        <div style="width:100%; height:100vh; background-color:#ddd" align="center">
+            <div style="height:20vh"></div>
+            <div><br><br><br>
+                <h2>Test if You Have a Big Butt</h2><br>
+                <form class="form-inline">
+                    <div class="">
+                        <input class="form-control" type="text" id="whosName" size="40" placeholder="Enter your name here">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="runTest()">
+                          Start Test
+                        </button>
+                    </div>
+                </form>
+                <br>
+                <a>Click Here for Help</a>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body" id="result" style="text-align:center">
+              ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+        $('form').submit(false);
+        function runTest() {
+            var name, ans
+            name = document.getElementById("whosName").value
+            
+            if(name == ""){
+                ans = "Please Enter Your Name"
+            }
+            else if(name == "Yuan" || name == "yuan" || name == "媛" || name == "國媛" || name == "趙國媛" || name == "Anne"){
+                ans = "<span style='font-size:100px;'>&#128525;&#128525;&#128525;</span><br><br><image src='./1.1.jpeg'><br><br><br><image src='./1.png'>"
+            }
+            else if(name == "Ting" || name == "ting" || name == "詩婷" || name == "黃詩婷"){
+                ans = "<image src='./2.jpg'>"
+            }
+            else if(name == "Ellie" || name == "ellie"){
+                ans = "<image src='./3.jpg'>"
+            }
+            else{
+                ans = "太天真了哈哈哈<br><br>我怎麼可能會知道呢？<br>還是自己去照鏡子吧！<br><br>顆顆<br><br><image src='./d.jpg'>"
+            }
+            
+            document.getElementById("result").innerHTML = "<br><br>" + ans + "<br><br><br>"
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
